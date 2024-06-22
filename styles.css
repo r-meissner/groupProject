@@ -97,5 +97,53 @@ main {
 }
 
 footer {
+<<<<<<< HEAD
+    display: grid;
+    background-color: #f3f3f3;
+}
 
+footer .container {
+    text-align: center;
+}
+
+footer .container .link {
+    text-decoration: none;
+    padding: 10px 5px;
+    /* background-color: white; */
+    color: black;
+}
+
+footer .container .navigation {
+    margin: 40px 0;
+}
+
+footer .container .social-links {
+    margin: 40px 0;
+}
+
+footer .container .social-links .link {
+    border-radius: 30px;
+    margin: 0 10px;
+    padding: 20px
+}
+
+footer .container .social-links .link.facebook {
+    background-color: darkblue;
+    color: white;
+}
+
+footer .container .social-links .link.instagram {
+    background-color: blueviolet;
+}
+
+footer .container .social-links .link.youtube {
+    background-color: red;
+}
+
+footer .container .social-links .link.linkedin {
+    background-color: blue;
+    color: white
+=======
+
+>>>>>>> main
 }
