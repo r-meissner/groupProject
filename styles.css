@@ -16,12 +16,85 @@ main {
 
 }
 
-.hero {
+abbr {
+    font-style: italic;
+    color: chocolate;
+}
 
+.hero {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    background-color: lightgray;
+}
+
+.hero .btn {
+    display: inline-block;
+    border-radius: 5px;
+    border-color: lightcoral;
+    background-color: orange;
+    padding: 20px 40px;
+    margin: 10px 0;
+}
+
+.hero > .left {
+    grid-column-start: 2;
+    grid-column-end: 6;
+    background-color: lightcyan;
+    margin: 30px;
+    padding: 30px;
+}
+
+.hero > .right {
+    grid-column-start: 7;
+    grid-column-end: 10;
+    background-color: lightblue;
+    border-radius: 20px;
+    margin: 30px;
+    padding: 30px;
+}
+
+.hero > .right > figure {
+    margin: 0 auto;
+    width: 200px;
+    max-height: 600px;
+}
+
+.hero > .right > figure > figcaption {
+    font-style: italic;
+    font-size: 1rem;
+}
+.hero > .right > figure > img {
+    max-height: 400px;
+    margin-top: 50px;
+}
+
+.hero > .right > .center {
+    margin: 0 auto;
+    width: 150px;
 }
 
 .testimonials {
+    display: grid;
+    grid-template-columns: auto;
+    justify-content: center;
+}
 
+.testimonials h2 {
+    text-align: center;
+}
+
+.testimonials .companies {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+}
+
+.testimonials .companies .company {
+    grid-column: auto;
+    padding: 10px;
+}
+
+.testimonials .companies .company img {
+    height: 30px;
 }
 
 .video {
@@ -68,13 +141,125 @@ main {
 }
 
 .reasons {
+    font-family: sans-serif;
+    background-color: rgb(251, 165, 150);
+}
 
+.reasons h1 {
+    margin: auto;
+    text-align: center;
+    padding: 2rem;
+}
+
+.reasons-container {
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: 1fr 300px 1fr;
+    grid-template-rows: repeat(2, 1 fr);
+    margin: 1rem auto;
+    padding: 2rem;
+}
+
+.reasons-item img{
+    width: 200px;
+    display: block;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    margin: 1rem auto;
+}
+
+.reasons-item p{
+    text-align: center;
+    width: 200px;
+    margin: 1rem auto;
 }
 
 .prices {
+    display: grid;
+    text-align: center;
+    background-color: darkcyan;
+}
 
+.prices .price-packages {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    justify-content: center;
+}
+
+.prices .price-packages .price-package {
+    padding: 30px 0;
+    grid-auto-columns: max-content;
+    justify-content: center;
+    height: 300px;
+    width: 200px;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 40px;
+    background-color: lightgoldenrodyellow;
+    display: grid;
+    grid-template-columns: auto;
+}
+
+.prices .price-packages .price-package:first-child {
+    background-color: lightcoral;
+}
+
+.prices .price-packages .price-package:last-child {
+    background-color: darkgreen;
+}
+
+.prices .price-packages .price-package h3 {
+    align-self: start;
+}
+
+.prices .price-packages .price-package button {
+    align-self: end;
 }
 
 footer {
-    
+    display: grid;
+    background-color: #f3f3f3;
+}
+
+footer .container {
+    text-align: center;
+}
+
+footer .container .link {
+    text-decoration: none;
+    padding: 10px 5px;
+    /* background-color: white; */
+    color: black;
+}
+
+footer .container .navigation {
+    margin: 40px 0;
+}
+
+footer .container .social-links {
+    margin: 40px 0;
+}
+
+footer .container .social-links .link {
+    border-radius: 30px;
+    margin: 0 10px;
+    padding: 20px
+}
+
+footer .container .social-links .link.facebook {
+    background-color: darkblue;
+    color: white;
+}
+
+footer .container .social-links .link.instagram {
+    background-color: blueviolet;
+}
+
+footer .container .social-links .link.youtube {
+    background-color: red;
+}
+
+footer .container .social-links .link.linkedin {
+    background-color: blue;
+    color: white
 }
