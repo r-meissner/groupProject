@@ -141,7 +141,22 @@ abbr {
 }
 
 .video {
+    display: block;
+    background-color: tomato;
+    font-family: sans-serif;
+    padding: 4rem;
+}
 
+.video h1 {
+    display: flex;
+    justify-content: center;
+    margin: 2rem;
+}
+
+.video video {
+    display: block;
+    margin: auto;
+    border: 5px solid white;
 }
 
 .features {
