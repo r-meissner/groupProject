@@ -1,13 +1,42 @@
 body {
-
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
+
 
 header {
 
 }
 
 nav {
+    display: flex;
+    font-family: sans-serif;
+    justify-content: space-between;
+    padding: 1rem;
+    text-align: center;
+    text-decoration: none;
+    background-color: tomato;
+}
 
+nav h1 {
+    display: block;
+    background-color: white;
+    padding: 0.5rem;
+    
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+}
+
+nav li {
+    display: block;
+    margin: 0.5rem;
+    background-color: white;
+    padding: 0.5rem;
 }
 
 main {
