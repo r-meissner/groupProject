@@ -35,9 +35,47 @@ main {
 }
 
 .prices {
+    display: grid;
+    text-align: center;
+    background-color: darkcyan;
+}
 
+.prices .price-packages {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    justify-content: center;
+}
+
+.prices .price-packages .price-package {
+    padding: 30px 0;
+    grid-auto-columns: max-content;
+    justify-content: center;
+    height: 300px;
+    width: 200px;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 40px;
+    background-color: lightgoldenrodyellow;
+    display: grid;
+    grid-template-columns: auto;
+}
+
+.prices .price-packages .price-package:first-child {
+    background-color: lightcoral;
+}
+
+.prices .price-packages .price-package:last-child {
+    background-color: darkgreen;
+}
+
+.prices .price-packages .price-package h3 {
+    align-self: start;
+}
+
+.prices .price-packages .price-package button {
+    align-self: end;
 }
 
 footer {
-    
+
 }
