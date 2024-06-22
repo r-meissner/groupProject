@@ -102,7 +102,42 @@ abbr {
 }
 
 .features {
+    background-color: tomato;
+    font-family: sans-serif;
+}
 
+.features h1 {
+    text-align: center;
+    padding: 1rem;
+}
+
+.features p {
+    text-align: center;
+}
+
+.features-container {
+    display: flex;
+    justify-content: center;
+}
+
+.features-item {
+    display: block;
+    margin: 1rem;  
+}
+
+.features-item img{
+    width: 200px;
+    display: block;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    margin: 1rem auto;
+}
+
+.features-item p{
+    width: 200px;
+    display: block;
+    margin: 1rem auto;
+    text-align: center;    
 }
 
 .reasons {
